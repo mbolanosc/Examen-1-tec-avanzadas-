@@ -1,0 +1,98 @@
+@import 'variables','functions','mixins';
+body{
+  background-color: $body-color;
+}
+.header{
+  background-color: $light-blue;
+  width: 100%;
+  height:em(114px,$body-font-size);
+  font-family:$main-font;
+  color: $white;
+}
+.wrapper-header{
+  padding-left: em(100px,$body-font-size);
+  display: flex;
+  flex-wrap: wrap;
+  padding-top:em(45px,$body-font-size);
+  @media screen and (max-width: $break-large) {
+    font-size: $body-font-size-responsive;
+    justify-content:center;
+  }
+
+  @media screen and (max-width: $break-small-large) {
+    font-size: $body-font-size-responsive;
+    justify-content:center;
+  }
+}
+#main-title{
+  font-size: $font-size-xxlarge;
+  padding-top: em(1px,$body-font-size);
+}
+#second-title{
+  padding-top: em(15px,$body-font-size);
+  padding-left: em(5px,$body-font-size);
+
+  @media screen and (max-width: $break-small) {
+    padding-top: 2.13em;
+  }
+}
+#navbar{
+  padding-top: em(15px,$body-font-size);
+  padding-left: em(600px,$body-font-size);
+
+  @media screen and (max-width: $break-small-large) {
+    font-size: $body-font-size-responsive;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-right: em(75px,$body-font-size);
+    margin-top: em(15px,$body-font-size);
+  }
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+}
+a{
+  color: $white;
+  text-decoration: none;
+}
+.wrapper{
+  max-width: 55.688em;
+  margin: 0 auto;
+  margin-top: 3.625em;
+  margin-bottom: 3.625em;
+}
+.content{
+  background-color: $white;
+  border-style: dashed;
+  border-color: $detail-color;
+}
+h1{
+  color: $light-blue;
+  font-family:$main-font;
+  text-align: center;
+}
+#first-bx, #second-bx, #third-bx, #fourth-bx{
+  font-family: $main-font;
+  font-size: em(14px,$body-font-size);
+}
+#first-bx{
+  height:em(130px,$body-font-size);
+  background-color: red;
+}
+#second-bx{
+  height:em(120px,$body-font-size);
+  background-color: blue;
+}
+#third-bx{
+  height:em(120px,$body-font-size);
+  background-color: yellow;
+}
+#fourth-bx{
+  height:em(120px,$body-font-size);
+  background-color: red;
+}

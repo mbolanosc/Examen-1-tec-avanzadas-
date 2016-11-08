@@ -1,0 +1,4 @@
+@mixin solid-border() {
+  border-style: dashed;
+  border-color: $detail-color;
+}

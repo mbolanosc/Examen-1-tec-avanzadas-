@@ -24,6 +24,10 @@ body{
     justify-content:center;
   }
 }
+.w-titles{
+  display: flex;
+  margin-left: 11%;
+}
 #main-title{
   font-size: $font-size-xxlarge;
 }
@@ -37,7 +41,7 @@ body{
 }
 #navbar{
   padding-top: em(15px,$body-font-size);
-  padding-left: em(600px,$body-font-size);
+  margin-left: 38%;
 
   @media screen and (max-width: $break-small-large) {
     font-size: $body-font-size-responsive;
@@ -58,6 +62,9 @@ li {
 a{
   color: $white;
   text-decoration: none;
+}
+a:hover{
+  color: #E0E4CC;
 }
 .wrapper{
   max-width: 55.688em;
@@ -110,4 +117,46 @@ h1{
   float: right;
   margin-top: em(50px,$body-font-size);
   margin-right:  15%;
+}
+input,textarea {
+  display: block;
+  margin: 0;
+  width: 90%;
+  font-family: $main-font;
+  font-size: $body-font-size;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+.left-row{
+  width: 50%;
+  float: left;
+  margin-left:em(8px,$body-font-size);
+}
+.right-row{
+  width: 48%;
+  float: right;
+}
+.bottom-row{
+  margin-left:em(8px,$body-font-size);
+  padding-top: em(245px,$body-font-size);
+  padding-bottom: em(30px,$body-font-size);;
+}
+
+label{
+  font-family: $main-font;
+  font-size: $body-font-size;
+}
+.space-between{
+  height: 2em;
+}
+button{
+  background: $green-color;
+  font-size: 1em;
+  float: right;
+  margin-top: 1em;
+  padding: 10px 36px;
+  color:$white;
+  border: none;
+  font-family: $main-font;
 }
